@@ -50,7 +50,13 @@ def main():
             failed = True
     if failed:
         sys.exit(1)
-    print("\nAll Muse Gadget sources verified successfully.")
+    # 🔴 报出**源数**（2026-10-15 加）：原来只印一句「verified successfully」，
+    #    下游无法从这个绿里读出"验了几个" ⇒ 空清单也能印出一模一样的绿。
+    #    ⚠️ 实况：轮动核验器 2026-10-15 把本仓列为「绿但报不出源数」——
+    #       那不是它误报，是**这句话当时确实不可核对**。
+    if not sources:
+        sys.exit("No sources found — an empty list is a pass that proves nothing. Failing.")
+    print(f"\nAll {len(sources)} sources verified successfully.")
 
 
 if __name__ == "__main__":
