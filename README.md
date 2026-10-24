@@ -7,6 +7,7 @@
 [![Boards](https://img.shields.io/badge/Boards-24-blue)](facebookincubator/muse-gadget-sdk)
 [![Skills](https://img.shields.io/badge/Skills-43-violet)](facebookincubator/muse-gadget-sdk)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://github.com/facebookincubator/muse-gadget-sdk/blob/main/LICENSE)
+[![Last updated](https://img.shields.io/badge/Last%20updated-2026-10-24-green)]()
 
 Meta's open-source SDK lets any ESP32 board or Linux box pair with [Muse](https://gadgets.muse.ai) and act as a **gadget** — screen, button, sensor, or full UI.
 This list tracks every supported board, every official skill, and every community port.

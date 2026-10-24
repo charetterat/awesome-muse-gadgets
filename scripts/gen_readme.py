@@ -81,6 +81,7 @@ def build(d):
 [![Boards](https://img.shields.io/badge/Boards-{len(boards)}-blue)]({src['sdk_repo']})
 [![Skills](https://img.shields.io/badge/Skills-{len(skills)}-violet)]({src['sdk_repo']})
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://github.com/{src['sdk_repo']}/blob/main/LICENSE)
+[![Last updated](https://img.shields.io/badge/Last%20updated-{d['updated']}-green)]()
 
 Meta's open-source SDK lets any ESP32 board or Linux box pair with [Muse](https://gadgets.muse.ai) and act as a **gadget** — screen, button, sensor, or full UI.
 This list tracks every supported board, every official skill, and every community port.
