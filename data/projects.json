@@ -3,7 +3,7 @@
   "subject": "Meta Muse Gadgets ecosystem",
   "vendor": "Meta Platforms (facebookincubator)",
   "announced": "2026-10-02",
-  "updated": "2026-10-27",
+  "updated": "2026-10-28",
   "one_line": "A curated, verified index of every board, gadget port, skill, and project that runs Meta's open-source Muse Gadget SDK — the official, end-of-2026 list.",
   "official_sources": {
     "sdk_repo": "facebookincubator/muse-gadget-sdk",
