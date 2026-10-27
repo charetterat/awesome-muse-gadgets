@@ -1,614 +1,614 @@
 {
- "repo": "awesome-muse-gadgets",
- "subject": "Meta Muse Gadgets ecosystem",
- "vendor": "Meta Platforms (facebookincubator)",
- "announced": "2026-10-02",
- "updated": "2026-10-25",
- "one_line": "A curated, verified index of every board, gadget port, skill, and project that runs Meta's open-source Muse Gadget SDK — the official, end-of-2026 list.",
- "official_sources": {
-  "sdk_repo": "facebookincubator/muse-gadget-sdk",
-  "homepage": "https://gadgets.muse.ai",
-  "sdk_terms": "https://gadgets.muse.ai/sdk-terms",
-  "license": "Apache-2.0"
- },
- "categories": {
-  "official_boards": {
-   "title": "Boards officially supported by the Muse Gadget SDK",
-   "source": "esp32/README.md in muse-gadget-sdk",
-   "items": [
-    {
-     "name": "ESP32-C5 DevKitC-1",
-     "chip": "ESP32-C5",
-     "display": "RGB status light",
-     "tier": "minimal",
-     "build": "idf.py build",
-     "buy": "DigiKey",
-     "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c5/esp32-c5-devkitc-1/index.html"
+  "repo": "awesome-muse-gadgets",
+  "subject": "Meta Muse Gadgets ecosystem",
+  "vendor": "Meta Platforms (facebookincubator)",
+  "announced": "2026-10-02",
+  "updated": "2026-10-27",
+  "one_line": "A curated, verified index of every board, gadget port, skill, and project that runs Meta's open-source Muse Gadget SDK — the official, end-of-2026 list.",
+  "official_sources": {
+    "sdk_repo": "facebookincubator/muse-gadget-sdk",
+    "homepage": "https://gadgets.muse.ai",
+    "sdk_terms": "https://gadgets.muse.ai/sdk-terms",
+    "license": "Apache-2.0"
+  },
+  "categories": {
+    "official_boards": {
+      "title": "Boards officially supported by the Muse Gadget SDK",
+      "source": "esp32/README.md in muse-gadget-sdk",
+      "items": [
+        {
+          "name": "ESP32-C5 DevKitC-1",
+          "chip": "ESP32-C5",
+          "display": "RGB status light",
+          "tier": "minimal",
+          "build": "idf.py build",
+          "buy": "DigiKey",
+          "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c5/esp32-c5-devkitc-1/index.html"
+        },
+        {
+          "name": "ESP32-C6 devkit (no PSRAM)",
+          "chip": "ESP32-C6",
+          "display": "RGB status light",
+          "tier": "minimal",
+          "build": "tools/board.sh c6-nopsram build",
+          "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/user_guide.html"
+        },
+        {
+          "name": "Espressif ESP32-S3-DevKitC-1",
+          "chip": "ESP32-S3",
+          "display": "RGB status light",
+          "tier": "minimal",
+          "build": "tools/board.sh espressif-s3-devkitc-1 build",
+          "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitc-1/user_guide_v1.1.html"
+        },
+        {
+          "name": "ideaspark ESP32 with 1.9\" display",
+          "chip": "ESP32",
+          "display": "1.9\" 170×320 LCD",
+          "tier": "status",
+          "build": "tools/board.sh ideaspark build",
+          "buy": "Amazon"
+        },
+        {
+          "name": "Waveshare ESP32-C6-LCD-1.47",
+          "chip": "ESP32-C6",
+          "display": "1.47\" 172×320 LCD",
+          "tier": "status",
+          "build": "tools/board.sh waveshare-c6-lcd-147 build",
+          "url": "https://www.waveshare.com/wiki/ESP32-C6-LCD-1.47"
+        },
+        {
+          "name": "Seeed SenseCAP Indicator",
+          "chip": "ESP32-S3",
+          "display": "4\" 480×480 LCD",
+          "tier": "status",
+          "build": "tools/board.sh sensecap-indicator build",
+          "url": "https://wiki.seeedstudio.com/SenseCAP_Indicator_Get_Started/"
+        },
+        {
+          "name": "Seeed reTerminal E1001",
+          "chip": "ESP32-S3",
+          "display": "7.5\" 800×480 e-paper B/W",
+          "tier": "status",
+          "build": "tools/board.sh reterminal-e1001 build",
+          "url": "https://wiki.seeedstudio.com/getting_started_with_reterminal_e1001/"
+        },
+        {
+          "name": "Seeed reTerminal E1002",
+          "chip": "ESP32-S3",
+          "display": "7.3\" 800×480 e-paper Spectra 6",
+          "tier": "status",
+          "build": "tools/board.sh reterminal-e1002 build",
+          "url": "https://wiki.seeedstudio.com/reterminal_e10xx_with_esphome/"
+        },
+        {
+          "name": "Home Assistant Voice Preview Edition",
+          "chip": "ESP32-S3",
+          "display": "12-LED ring",
+          "tier": "status",
+          "build": "tools/board.sh home-assistant-voice build",
+          "url": "https://www.home-assistant.io/voice-pe/"
+        },
+        {
+          "name": "Seeed reSpeaker Lite (XIAO ESP32-S3)",
+          "chip": "ESP32-S3",
+          "display": "single RGB LED",
+          "tier": "experimental",
+          "build": "See devices/seeed-respeaker-lite.md"
+        },
+        {
+          "name": "Waveshare ESP32-S3-Touch-AMOLED-1.75C",
+          "chip": "ESP32-S3",
+          "display": "1.75\" 466×466 round AMOLED, touch",
+          "tier": "full-ui",
+          "url": "https://docs.waveshare.com/ESP32-S3-Touch-AMOLED-1.75C"
+        },
+        {
+          "name": "Waveshare ESP32-S3-Touch-AMOLED-1.75",
+          "chip": "ESP32-S3",
+          "display": "1.75\" 466×466 round AMOLED, touch",
+          "tier": "full-ui",
+          "url": "https://docs.waveshare.com/ESP32-S3-Touch-AMOLED-1.75"
+        },
+        {
+          "name": "Espressif ESP32-S3-BOX-3",
+          "chip": "ESP32-S3",
+          "display": "2.4\" 320×240 LCD, touch",
+          "tier": "full-ui",
+          "url": "https://github.com/espressif/esp-box"
+        },
+        {
+          "name": "AIPI Lite",
+          "chip": "ESP32-S3",
+          "display": "128×128 LCD",
+          "tier": "full-ui",
+          "url": "https://github.com/78/xiaozhi-esp32/tree/main/main/boards/xorigin/aipi-lite"
+        },
+        {
+          "name": "Waveshare ESP32-C6-Touch-AMOLED-1.8",
+          "chip": "ESP32-C6",
+          "display": "1.8\" 368×448 AMOLED, touch",
+          "tier": "full-ui",
+          "url": "https://docs.waveshare.com/ESP32-C6-Touch-AMOLED-1.8"
+        },
+        {
+          "name": "Seeed SenseCAP Watcher",
+          "chip": "ESP32-S3",
+          "display": "1.45\" 412×412 round LCD, touch",
+          "tier": "full-ui",
+          "url": "https://wiki.seeedstudio.com/watcher/"
+        },
+        {
+          "name": "M5Stack Cardputer ADV",
+          "chip": "ESP32-S3",
+          "display": "1.14\" 240×135 LCD",
+          "tier": "full-ui",
+          "experimental": true,
+          "build": "tools/muse/board.sh build cardputer-adv"
+        },
+        {
+          "name": "M5Stack StickS3",
+          "chip": "ESP32-S3",
+          "display": "1.14\" 135×240 LCD",
+          "tier": "full-ui"
+        },
+        {
+          "name": "M5Stack StopWatch",
+          "chip": "ESP32-S3",
+          "display": "1.75\" 466×466 round AMOLED, touch",
+          "tier": "full-ui"
+        },
+        {
+          "name": "M5Stack CoreS3",
+          "chip": "ESP32-S3",
+          "display": "2\" 320×240 LCD, touch",
+          "tier": "full-ui"
+        },
+        {
+          "name": "Guition JC3248W535",
+          "chip": "ESP32-S3",
+          "display": "3.5\" 320×480 IPS, touch",
+          "tier": "full-ui",
+          "build": "tools/muse/board.sh build jc3248w535"
+        },
+        {
+          "name": "M5Stack StickC Plus2",
+          "chip": "ESP32",
+          "display": "1.14\" 135×240 LCD",
+          "tier": "full-ui",
+          "buy": "M5Stack (end-of-life)"
+        },
+        {
+          "name": "M5Stack Core2 v1.0",
+          "chip": "ESP32",
+          "display": "2.0\" 320×240 touch LCD",
+          "tier": "full-ui",
+          "build": "tools/muse/board.sh build core2"
+        },
+        {
+          "name": "Freenove FNK0104B",
+          "chip": "ESP32-S3",
+          "display": "2.8\" 240×320 touch LCD",
+          "tier": "full-ui",
+          "build": "tools/muse/board.sh build fnk0104b"
+        }
+      ]
     },
-    {
-     "name": "ESP32-C6 devkit (no PSRAM)",
-     "chip": "ESP32-C6",
-     "display": "RGB status light",
-     "tier": "minimal",
-     "build": "tools/board.sh c6-nopsram build",
-     "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/user_guide.html"
+    "official_skills": {
+      "title": "Skill catalog shipped with the SDK (43 active skills)",
+      "source": "skills/CATALOG.md in muse-gadget-sdk",
+      "items": [
+        {
+          "name": "Google Cast",
+          "kind": "shared protocol",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-google-cast"
+        },
+        {
+          "name": "Lutron Smart Bridges",
+          "kind": "lights",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-lutron-smart-bridges"
+        },
+        {
+          "name": "Shelly Gen 4 plugs",
+          "kind": "plugs",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-shelly-plugs"
+        },
+        {
+          "name": "Philips Hue bridges",
+          "kind": "lights",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-philips-hue-bridges"
+        },
+        {
+          "name": "Elgato Key Light",
+          "kind": "lights",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-elgato-key-light"
+        },
+        {
+          "name": "Meross smart plugs",
+          "kind": "plugs",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-meross-smart-plugs"
+        },
+        {
+          "name": "TP-Link Kasa EP10",
+          "kind": "plugs",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-tplink-kasa-ep10"
+        },
+        {
+          "name": "TP-Link Kasa EP25",
+          "kind": "plugs",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-tplink-kasa-ep25"
+        },
+        {
+          "name": "Apple HomePod mini",
+          "kind": "speaker",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-apple-homepod-mini"
+        },
+        {
+          "name": "Apple TV 4K",
+          "kind": "tv",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-apple-tv-4k"
+        },
+        {
+          "name": "Freebox Player Pop",
+          "kind": "tv",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-freebox-player-pop"
+        },
+        {
+          "name": "Google Home",
+          "kind": "speaker",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-google-home-speaker"
+        },
+        {
+          "name": "Google Home Max",
+          "kind": "speaker",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-google-home-max"
+        },
+        {
+          "name": "Google Nest Audio",
+          "kind": "speaker",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-google-nest-audio"
+        },
+        {
+          "name": "Google Nest Hub",
+          "kind": "display",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-google-nest-hub"
+        },
+        {
+          "name": "Google Nest Hub Max",
+          "kind": "display",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-google-nest-hub-max"
+        },
+        {
+          "name": "Google Nest Mini",
+          "kind": "speaker",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-google-nest-mini"
+        },
+        {
+          "name": "Google Pixel Tablet",
+          "kind": "display",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-google-pixel-tablet"
+        },
+        {
+          "name": "Google TV Streamer",
+          "kind": "tv",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-google-tv-streamer"
+        },
+        {
+          "name": "LG webOS TVs",
+          "kind": "tv",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-lg-webos-tvs"
+        },
+        {
+          "name": "Logitech Squeezebox",
+          "kind": "speaker",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-logitech-squeezebox"
+        },
+        {
+          "name": "Samsung Tizen TVs",
+          "kind": "tv",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-samsung-tizen-tvs"
+        },
+        {
+          "name": "Sonos speakers",
+          "kind": "speaker",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-sonos-speakers"
+        },
+        {
+          "name": "VIZIO D40f-G9",
+          "kind": "tv",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-vizio-d40f-g9"
+        },
+        {
+          "name": "Brother printers",
+          "kind": "printer",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-brother-printers"
+        },
+        {
+          "name": "Epson printers",
+          "kind": "printer",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-epson-printers"
+        },
+        {
+          "name": "HP Color LaserJet Pro M254dw",
+          "kind": "printer",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-hp-color-laserjet-pro-m254dw"
+        },
+        {
+          "name": "Dyson Pure Hot+Cool HP04",
+          "kind": "appliance",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-dyson-pure-hot-cool-hp04"
+        },
+        {
+          "name": "Miele G7566 dishwasher",
+          "kind": "appliance",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-miele-g7566-dishwasher"
+        },
+        {
+          "name": "iRobot Roomba/Braava",
+          "kind": "vacuum",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-irobot-roomba-braava"
+        },
+        {
+          "name": "Roborock vacuums",
+          "kind": "vacuum",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-roborock-vacuums"
+        },
+        {
+          "name": "Eufy RoboVac (Tuya)",
+          "kind": "vacuum",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-eufy-robovac-tuya"
+        },
+        {
+          "name": "Moonraker 3D printers",
+          "kind": "printer",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-moonraker-3d-printers"
+        },
+        {
+          "name": "ratgdo v3.2 garage door",
+          "kind": "garage",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-ratgdo-v32-garage-door"
+        },
+        {
+          "name": "Sonoff RF Bridge",
+          "kind": "rf",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-sonoff-rf-bridge"
+        },
+        {
+          "name": "ESPHome devices",
+          "kind": "generic",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-esphome-devices"
+        },
+        {
+          "name": "ESP-Somfy-RTS",
+          "kind": "blinds",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-espsomfy-rts"
+        },
+        {
+          "name": "Velux KLF200",
+          "kind": "blinds",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-velux-klf200"
+        },
+        {
+          "name": "Tuya WiFi devices",
+          "kind": "generic",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-tuya-wifi-devices"
+        },
+        {
+          "name": "UniFi network consoles",
+          "kind": "network",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-unifi-network-consoles"
+        },
+        {
+          "name": "Zigbee2MQTT gateways",
+          "kind": "zigbee",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-zigbee2mqtt-gateways"
+        },
+        {
+          "name": "Wyze RTSP cameras",
+          "kind": "camera",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-wyze-rtsp-cameras"
+        },
+        {
+          "name": "Yi-Hack cameras",
+          "kind": "camera",
+          "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-yi-hack-cameras"
+        }
+      ]
     },
-    {
-     "name": "Espressif ESP32-S3-DevKitC-1",
-     "chip": "ESP32-S3",
-     "display": "RGB status light",
-     "tier": "minimal",
-     "build": "tools/board.sh espressif-s3-devkitc-1 build",
-     "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitc-1/user_guide_v1.1.html"
+    "community_ports": {
+      "title": "Third-party ports, wrappers, and integrations",
+      "items": [
+        {
+          "name": "Muse Code ACP adapter",
+          "author": "bex-co",
+          "repo": "bex-co/muse-code-acp",
+          "kind": "agent-protocol",
+          "purpose": "Unofficial ACP adapter so Muse Code works inside Zed"
+        },
+        {
+          "name": "Muse Code OpenRouter",
+          "author": "xhluca",
+          "repo": "xhluca/muse-code-openrouter",
+          "kind": "backend",
+          "purpose": "Plug OpenRouter keys and any model into Muse Code"
+        },
+        {
+          "name": "Muse Code in OpenCode",
+          "author": "swalker326",
+          "repo": "swalker326/opencode-muse-code",
+          "kind": "agent-protocol",
+          "purpose": "Reuse a Muse Code subscription in OpenCode"
+        },
+        {
+          "name": "Muse Code Sandboxes kit",
+          "author": "shelajev",
+          "repo": "shelajev/muse-code-sbx-kit",
+          "kind": "infra",
+          "purpose": "Docker sandboxes for Muse Code CLI"
+        },
+        {
+          "name": "Muse Code Helicon UI",
+          "author": "HarjjotSinghh",
+          "repo": "HarjjotSinghh/helicon",
+          "kind": "frontend",
+          "purpose": "Open-source desktop/web UI for Muse Code"
+        },
+        {
+          "name": "muse-gadget-psp",
+          "author": "wobsoriano",
+          "repo": "wobsoriano/muse-gadget-psp",
+          "kind": "port",
+          "purpose": "Run Muse Gadget SDK natively on Sony PSP"
+        },
+        {
+          "name": "muse-gadget-sdk (alt fork)",
+          "author": "ledienbien-ai",
+          "repo": "ledienbien-ai/muse-gadget-sdk",
+          "kind": "fork"
+        },
+        {
+          "name": "Waveshare Muse Gadget SDK",
+          "author": "wupsbr",
+          "repo": "wupsbr/waveshare-muse-gadget-sdk",
+          "kind": "board-port",
+          "purpose": "Waveshare ESP32-S3 boards (1.75/1.75C)"
+        },
+        {
+          "name": "muse-r1 (Rabbit r1 home launcher)",
+          "author": "cameronapak",
+          "repo": "cameronapak/muse-r1",
+          "kind": "device-mod",
+          "purpose": "Native Android HOME app: turn Rabbit r1 into a Muse Gadget host"
+        },
+        {
+          "name": "muse-arr",
+          "author": "vocino",
+          "repo": "vocino/muse-arr",
+          "kind": "skill-extension",
+          "purpose": "Control Sonarr/Radarr from Muse"
+        },
+        {
+          "name": "muse-gadget (Waveshare status report)",
+          "author": "az9713",
+          "repo": "az9713/muse-gadget",
+          "kind": "board-port",
+          "purpose": "Waveshare ESP32-S3-Touch-AMOLED-1.75C"
+        },
+        {
+          "name": "muse-gadget-xiaozhi",
+          "author": "moerdowo",
+          "repo": "moerdowo/muse-gadget-xiaozhi",
+          "kind": "firmware-port",
+          "purpose": "Muse UI (pixel character, push-to-talk, captioned display) for xiaozhi-esp32"
+        },
+        {
+          "name": "luci-muse-gadget",
+          "author": "burndown",
+          "repo": "burndown/luci-muse-gadget",
+          "kind": "router-port",
+          "purpose": "Run the SDK on OpenWrt with a LuCI page and BLE"
+        },
+        {
+          "name": "muse-ai-passport",
+          "author": "timzenxia",
+          "repo": "timzenxia/muse-ai-passport",
+          "kind": "port",
+          "purpose": "Unofficial firmware port of Muse Gadget SDK"
+        },
+        {
+          "name": "aipets-muse",
+          "author": "veiovi",
+          "repo": "veiovi/aipets-muse",
+          "kind": "animation-pack",
+          "purpose": "Portable AI Pets animation packs for Muse ESP32 SDK"
+        },
+        {
+          "name": "muse-web",
+          "author": "shreyaskarnik",
+          "repo": "shreyaskarnik/muse-web",
+          "kind": "firmware-port",
+          "purpose": "Browser installer for Muse Gadget SDK ESP32 firmware"
+        },
+        {
+          "name": "muse-tamagotchi",
+          "author": "ameyarya",
+          "repo": "ameyarya/muse-tamagotchi",
+          "kind": "hardware-project",
+          "purpose": "DIY ESP32 Muse handheld Tamagotchi-like device"
+        },
+        {
+          "name": "muse-gadget-c6-n16",
+          "author": "assix",
+          "repo": "assix/muse-gadget-c6-n16",
+          "kind": "board-port",
+          "purpose": "Bring Muse SDK to generic ESP32-C6-N16"
+        },
+        {
+          "name": "smktec-154-muse-port",
+          "author": "ousiaresearch",
+          "repo": "ousiaresearch/smktec-154-muse-port",
+          "kind": "board-port",
+          "purpose": "SMKTelec ESP32-S3 1.54\" port"
+        },
+        {
+          "name": "mute-gadget-sdk",
+          "author": "mfiumara",
+          "repo": "mfiumara/mute-gadget-sdk",
+          "kind": "fork",
+          "purpose": "Open-source gadgets on ESP32 + Linux with your own AI backend"
+        },
+        {
+          "name": "R1-jot",
+          "author": "sussman",
+          "repo": "sussman/R1-jot",
+          "kind": "experiment",
+          "purpose": "Connect Rabbit R1 to a persistent Muse gadget"
+        },
+        {
+          "name": "GenPark Ambient Vision Anchor",
+          "author": "Alpha-Park",
+          "repo": "Alpha-Park/genpark-ambient-vision-anchor-skill",
+          "kind": "skill",
+          "purpose": "Multimodal ambient vision Muse skill"
+        }
+      ]
     },
-    {
-     "name": "ideaspark ESP32 with 1.9\" display",
-     "chip": "ESP32",
-     "display": "1.9\" 170×320 LCD",
-     "tier": "status",
-     "build": "tools/board.sh ideaspark build",
-     "buy": "Amazon"
-    },
-    {
-     "name": "Waveshare ESP32-C6-LCD-1.47",
-     "chip": "ESP32-C6",
-     "display": "1.47\" 172×320 LCD",
-     "tier": "status",
-     "build": "tools/board.sh waveshare-c6-lcd-147 build",
-     "url": "https://www.waveshare.com/wiki/ESP32-C6-LCD-1.47"
-    },
-    {
-     "name": "Seeed SenseCAP Indicator",
-     "chip": "ESP32-S3",
-     "display": "4\" 480×480 LCD",
-     "tier": "status",
-     "build": "tools/board.sh sensecap-indicator build",
-     "url": "https://wiki.seeedstudio.com/SenseCAP_Indicator_Get_Started/"
-    },
-    {
-     "name": "Seeed reTerminal E1001",
-     "chip": "ESP32-S3",
-     "display": "7.5\" 800×480 e-paper B/W",
-     "tier": "status",
-     "build": "tools/board.sh reterminal-e1001 build",
-     "url": "https://wiki.seeedstudio.com/getting_started_with_reterminal_e1001/"
-    },
-    {
-     "name": "Seeed reTerminal E1002",
-     "chip": "ESP32-S3",
-     "display": "7.3\" 800×480 e-paper Spectra 6",
-     "tier": "status",
-     "build": "tools/board.sh reterminal-e1002 build",
-     "url": "https://wiki.seeedstudio.com/reterminal_e10xx_with_esphome/"
-    },
-    {
-     "name": "Home Assistant Voice Preview Edition",
-     "chip": "ESP32-S3",
-     "display": "12-LED ring",
-     "tier": "status",
-     "build": "tools/board.sh home-assistant-voice build",
-     "url": "https://www.home-assistant.io/voice-pe/"
-    },
-    {
-     "name": "Seeed reSpeaker Lite (XIAO ESP32-S3)",
-     "chip": "ESP32-S3",
-     "display": "single RGB LED",
-     "tier": "experimental",
-     "build": "See devices/seeed-respeaker-lite.md"
-    },
-    {
-     "name": "Waveshare ESP32-S3-Touch-AMOLED-1.75C",
-     "chip": "ESP32-S3",
-     "display": "1.75\" 466×466 round AMOLED, touch",
-     "tier": "full-ui",
-     "url": "https://docs.waveshare.com/ESP32-S3-Touch-AMOLED-1.75C"
-    },
-    {
-     "name": "Waveshare ESP32-S3-Touch-AMOLED-1.75",
-     "chip": "ESP32-S3",
-     "display": "1.75\" 466×466 round AMOLED, touch",
-     "tier": "full-ui",
-     "url": "https://docs.waveshare.com/ESP32-S3-Touch-AMOLED-1.75"
-    },
-    {
-     "name": "Espressif ESP32-S3-BOX-3",
-     "chip": "ESP32-S3",
-     "display": "2.4\" 320×240 LCD, touch",
-     "tier": "full-ui",
-     "url": "https://github.com/espressif/esp-box"
-    },
-    {
-     "name": "AIPI Lite",
-     "chip": "ESP32-S3",
-     "display": "128×128 LCD",
-     "tier": "full-ui",
-     "url": "https://github.com/78/xiaozhi-esp32/tree/main/main/boards/xorigin/aipi-lite"
-    },
-    {
-     "name": "Waveshare ESP32-C6-Touch-AMOLED-1.8",
-     "chip": "ESP32-C6",
-     "display": "1.8\" 368×448 AMOLED, touch",
-     "tier": "full-ui",
-     "url": "https://docs.waveshare.com/ESP32-C6-Touch-AMOLED-1.8"
-    },
-    {
-     "name": "Seeed SenseCAP Watcher",
-     "chip": "ESP32-S3",
-     "display": "1.45\" 412×412 round LCD, touch",
-     "tier": "full-ui",
-     "url": "https://wiki.seeedstudio.com/watcher/"
-    },
-    {
-     "name": "M5Stack Cardputer ADV",
-     "chip": "ESP32-S3",
-     "display": "1.14\" 240×135 LCD",
-     "tier": "full-ui",
-     "experimental": true,
-     "build": "tools/muse/board.sh build cardputer-adv"
-    },
-    {
-     "name": "M5Stack StickS3",
-     "chip": "ESP32-S3",
-     "display": "1.14\" 135×240 LCD",
-     "tier": "full-ui"
-    },
-    {
-     "name": "M5Stack StopWatch",
-     "chip": "ESP32-S3",
-     "display": "1.75\" 466×466 round AMOLED, touch",
-     "tier": "full-ui"
-    },
-    {
-     "name": "M5Stack CoreS3",
-     "chip": "ESP32-S3",
-     "display": "2\" 320×240 LCD, touch",
-     "tier": "full-ui"
-    },
-    {
-     "name": "Guition JC3248W535",
-     "chip": "ESP32-S3",
-     "display": "3.5\" 320×480 IPS, touch",
-     "tier": "full-ui",
-     "build": "tools/muse/board.sh build jc3248w535"
-    },
-    {
-     "name": "M5Stack StickC Plus2",
-     "chip": "ESP32",
-     "display": "1.14\" 135×240 LCD",
-     "tier": "full-ui",
-     "buy": "M5Stack (end-of-life)"
-    },
-    {
-     "name": "M5Stack Core2 v1.0",
-     "chip": "ESP32",
-     "display": "2.0\" 320×240 touch LCD",
-     "tier": "full-ui",
-     "build": "tools/muse/board.sh build core2"
-    },
-    {
-     "name": "Freenove FNK0104B",
-     "chip": "ESP32-S3",
-     "display": "2.8\" 240×320 touch LCD",
-     "tier": "full-ui",
-     "build": "tools/muse/board.sh build fnk0104b"
+    "rabbit_alternatives": {
+      "title": "Open-source Rabbit R1 alternatives & related",
+      "items": [
+        {
+          "name": "S1-app (Rabbit R1 alternative)",
+          "repo": "Foqsee/S1-app",
+          "purpose": "Open-source alternative to Rabbit R1"
+        },
+        {
+          "name": "hamster-h1 (Rabbit R1 alternative)",
+          "repo": "harigovind511/hamster-h1",
+          "purpose": "OS alternative aiming at parity with Rabbit R1"
+        }
+      ]
     }
-   ]
   },
-  "official_skills": {
-   "title": "Skill catalog shipped with the SDK (43 active skills)",
-   "source": "skills/CATALOG.md in muse-gadget-sdk",
-   "items": [
+  "quickstart": {
+    "esp32": "git clone https://github.com/facebookincubator/muse-gadget-sdk.git && cd muse-gadget-sdk/esp32 && idf.py build",
+    "linux": "curl -fsSL https://raw.githubusercontent.com/facebookincubator/muse-gadget-sdk/main/linux/install.sh -o install.sh && bash install.sh --sdk-token mgst_…",
+    "muse_code": "curl -fsSL https://dev.meta.ai/install.sh | sh   # official Muse Code CLI"
+  },
+  "verification_sources": [
     {
-     "name": "Google Cast",
-     "kind": "shared protocol",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-google-cast"
+      "name": "Official SDK repo (board list & skills catalog)",
+      "url": "https://github.com/facebookincubator/muse-gadget-sdk",
+      "expected_token": "Muse Gadgets"
     },
     {
-     "name": "Lutron Smart Bridges",
-     "kind": "lights",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-lutron-smart-bridges"
+      "name": "Official Muse Gadgets homepage",
+      "url": "https://gadgets.muse.ai",
+      "expected_token": "Muse"
     },
     {
-     "name": "Shelly Gen 4 plugs",
-     "kind": "plugs",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-shelly-plugs"
-    },
-    {
-     "name": "Philips Hue bridges",
-     "kind": "lights",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-philips-hue-bridges"
-    },
-    {
-     "name": "Elgato Key Light",
-     "kind": "lights",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-elgato-key-light"
-    },
-    {
-     "name": "Meross smart plugs",
-     "kind": "plugs",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-meross-smart-plugs"
-    },
-    {
-     "name": "TP-Link Kasa EP10",
-     "kind": "plugs",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-tplink-kasa-ep10"
-    },
-    {
-     "name": "TP-Link Kasa EP25",
-     "kind": "plugs",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-tplink-kasa-ep25"
-    },
-    {
-     "name": "Apple HomePod mini",
-     "kind": "speaker",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-apple-homepod-mini"
-    },
-    {
-     "name": "Apple TV 4K",
-     "kind": "tv",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-apple-tv-4k"
-    },
-    {
-     "name": "Freebox Player Pop",
-     "kind": "tv",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-freebox-player-pop"
-    },
-    {
-     "name": "Google Home",
-     "kind": "speaker",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-google-home-speaker"
-    },
-    {
-     "name": "Google Home Max",
-     "kind": "speaker",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-google-home-max"
-    },
-    {
-     "name": "Google Nest Audio",
-     "kind": "speaker",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-google-nest-audio"
-    },
-    {
-     "name": "Google Nest Hub",
-     "kind": "display",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-google-nest-hub"
-    },
-    {
-     "name": "Google Nest Hub Max",
-     "kind": "display",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-google-nest-hub-max"
-    },
-    {
-     "name": "Google Nest Mini",
-     "kind": "speaker",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-google-nest-mini"
-    },
-    {
-     "name": "Google Pixel Tablet",
-     "kind": "display",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-google-pixel-tablet"
-    },
-    {
-     "name": "Google TV Streamer",
-     "kind": "tv",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-google-tv-streamer"
-    },
-    {
-     "name": "LG webOS TVs",
-     "kind": "tv",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-lg-webos-tvs"
-    },
-    {
-     "name": "Logitech Squeezebox",
-     "kind": "speaker",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-logitech-squeezebox"
-    },
-    {
-     "name": "Samsung Tizen TVs",
-     "kind": "tv",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-samsung-tizen-tvs"
-    },
-    {
-     "name": "Sonos speakers",
-     "kind": "speaker",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-sonos-speakers"
-    },
-    {
-     "name": "VIZIO D40f-G9",
-     "kind": "tv",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-vizio-d40f-g9"
-    },
-    {
-     "name": "Brother printers",
-     "kind": "printer",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-brother-printers"
-    },
-    {
-     "name": "Epson printers",
-     "kind": "printer",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-epson-printers"
-    },
-    {
-     "name": "HP Color LaserJet Pro M254dw",
-     "kind": "printer",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-hp-color-laserjet-pro-m254dw"
-    },
-    {
-     "name": "Dyson Pure Hot+Cool HP04",
-     "kind": "appliance",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-dyson-pure-hot-cool-hp04"
-    },
-    {
-     "name": "Miele G7566 dishwasher",
-     "kind": "appliance",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-miele-g7566-dishwasher"
-    },
-    {
-     "name": "iRobot Roomba/Braava",
-     "kind": "vacuum",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-irobot-roomba-braava"
-    },
-    {
-     "name": "Roborock vacuums",
-     "kind": "vacuum",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-roborock-vacuums"
-    },
-    {
-     "name": "Eufy RoboVac (Tuya)",
-     "kind": "vacuum",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-eufy-robovac-tuya"
-    },
-    {
-     "name": "Moonraker 3D printers",
-     "kind": "printer",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-moonraker-3d-printers"
-    },
-    {
-     "name": "ratgdo v3.2 garage door",
-     "kind": "garage",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-ratgdo-v32-garage-door"
-    },
-    {
-     "name": "Sonoff RF Bridge",
-     "kind": "rf",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-sonoff-rf-bridge"
-    },
-    {
-     "name": "ESPHome devices",
-     "kind": "generic",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-esphome-devices"
-    },
-    {
-     "name": "ESP-Somfy-RTS",
-     "kind": "blinds",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-espsomfy-rts"
-    },
-    {
-     "name": "Velux KLF200",
-     "kind": "blinds",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-velux-klf200"
-    },
-    {
-     "name": "Tuya WiFi devices",
-     "kind": "generic",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-tuya-wifi-devices"
-    },
-    {
-     "name": "UniFi network consoles",
-     "kind": "network",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-unifi-network-consoles"
-    },
-    {
-     "name": "Zigbee2MQTT gateways",
-     "kind": "zigbee",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-zigbee2mqtt-gateways"
-    },
-    {
-     "name": "Wyze RTSP cameras",
-     "kind": "camera",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-wyze-rtsp-cameras"
-    },
-    {
-     "name": "Yi-Hack cameras",
-     "kind": "camera",
-     "file": "https://github.com/facebookincubator/muse-gadget-sdk/tree/main/skills/gadget-yi-hack-cameras"
+      "name": "Official Skill Catalog",
+      "url": "https://raw.githubusercontent.com/facebookincubator/muse-gadget-sdk/main/skills/CATALOG.md",
+      "expected_token": "Skill Catalog"
     }
-   ]
-  },
-  "community_ports": {
-   "title": "Third-party ports, wrappers, and integrations",
-   "items": [
-    {
-     "name": "Muse Code ACP adapter",
-     "author": "bex-co",
-     "repo": "bex-co/muse-code-acp",
-     "kind": "agent-protocol",
-     "purpose": "Unofficial ACP adapter so Muse Code works inside Zed"
-    },
-    {
-     "name": "Muse Code OpenRouter",
-     "author": "xhluca",
-     "repo": "xhluca/muse-code-openrouter",
-     "kind": "backend",
-     "purpose": "Plug OpenRouter keys and any model into Muse Code"
-    },
-    {
-     "name": "Muse Code in OpenCode",
-     "author": "swalker326",
-     "repo": "swalker326/opencode-muse-code",
-     "kind": "agent-protocol",
-     "purpose": "Reuse a Muse Code subscription in OpenCode"
-    },
-    {
-     "name": "Muse Code Sandboxes kit",
-     "author": "shelajev",
-     "repo": "shelajev/muse-code-sbx-kit",
-     "kind": "infra",
-     "purpose": "Docker sandboxes for Muse Code CLI"
-    },
-    {
-     "name": "Muse Code Helicon UI",
-     "author": "HarjjotSinghh",
-     "repo": "HarjjotSinghh/helicon",
-     "kind": "frontend",
-     "purpose": "Open-source desktop/web UI for Muse Code"
-    },
-    {
-     "name": "muse-gadget-psp",
-     "author": "wobsoriano",
-     "repo": "wobsoriano/muse-gadget-psp",
-     "kind": "port",
-     "purpose": "Run Muse Gadget SDK natively on Sony PSP"
-    },
-    {
-     "name": "muse-gadget-sdk (alt fork)",
-     "author": "ledienbien-ai",
-     "repo": "ledienbien-ai/muse-gadget-sdk",
-     "kind": "fork"
-    },
-    {
-     "name": "Waveshare Muse Gadget SDK",
-     "author": "wupsbr",
-     "repo": "wupsbr/waveshare-muse-gadget-sdk",
-     "kind": "board-port",
-     "purpose": "Waveshare ESP32-S3 boards (1.75/1.75C)"
-    },
-    {
-     "name": "muse-r1 (Rabbit r1 home launcher)",
-     "author": "cameronapak",
-     "repo": "cameronapak/muse-r1",
-     "kind": "device-mod",
-     "purpose": "Native Android HOME app: turn Rabbit r1 into a Muse Gadget host"
-    },
-    {
-     "name": "muse-arr",
-     "author": "vocino",
-     "repo": "vocino/muse-arr",
-     "kind": "skill-extension",
-     "purpose": "Control Sonarr/Radarr from Muse"
-    },
-    {
-     "name": "muse-gadget (Waveshare status report)",
-     "author": "az9713",
-     "repo": "az9713/muse-gadget",
-     "kind": "board-port",
-     "purpose": "Waveshare ESP32-S3-Touch-AMOLED-1.75C"
-    },
-    {
-     "name": "muse-gadget-xiaozhi",
-     "author": "moerdowo",
-     "repo": "moerdowo/muse-gadget-xiaozhi",
-     "kind": "firmware-port",
-     "purpose": "Muse UI (pixel character, push-to-talk, captioned display) for xiaozhi-esp32"
-    },
-    {
-     "name": "luci-muse-gadget",
-     "author": "burndown",
-     "repo": "burndown/luci-muse-gadget",
-     "kind": "router-port",
-     "purpose": "Run the SDK on OpenWrt with a LuCI page and BLE"
-    },
-    {
-     "name": "muse-ai-passport",
-     "author": "timzenxia",
-     "repo": "timzenxia/muse-ai-passport",
-     "kind": "port",
-     "purpose": "Unofficial firmware port of Muse Gadget SDK"
-    },
-    {
-     "name": "aipets-muse",
-     "author": "veiovi",
-     "repo": "veiovi/aipets-muse",
-     "kind": "animation-pack",
-     "purpose": "Portable AI Pets animation packs for Muse ESP32 SDK"
-    },
-    {
-     "name": "muse-web",
-     "author": "shreyaskarnik",
-     "repo": "shreyaskarnik/muse-web",
-     "kind": "firmware-port",
-     "purpose": "Browser installer for Muse Gadget SDK ESP32 firmware"
-    },
-    {
-     "name": "muse-tamagotchi",
-     "author": "ameyarya",
-     "repo": "ameyarya/muse-tamagotchi",
-     "kind": "hardware-project",
-     "purpose": "DIY ESP32 Muse handheld Tamagotchi-like device"
-    },
-    {
-     "name": "muse-gadget-c6-n16",
-     "author": "assix",
-     "repo": "assix/muse-gadget-c6-n16",
-     "kind": "board-port",
-     "purpose": "Bring Muse SDK to generic ESP32-C6-N16"
-    },
-    {
-     "name": "smktec-154-muse-port",
-     "author": "ousiaresearch",
-     "repo": "ousiaresearch/smktec-154-muse-port",
-     "kind": "board-port",
-     "purpose": "SMKTelec ESP32-S3 1.54\" port"
-    },
-    {
-     "name": "mute-gadget-sdk",
-     "author": "mfiumara",
-     "repo": "mfiumara/mute-gadget-sdk",
-     "kind": "fork",
-     "purpose": "Open-source gadgets on ESP32 + Linux with your own AI backend"
-    },
-    {
-     "name": "R1-jot",
-     "author": "sussman",
-     "repo": "sussman/R1-jot",
-     "kind": "experiment",
-     "purpose": "Connect Rabbit R1 to a persistent Muse gadget"
-    },
-    {
-     "name": "GenPark Ambient Vision Anchor",
-     "author": "Alpha-Park",
-     "repo": "Alpha-Park/genpark-ambient-vision-anchor-skill",
-     "kind": "skill",
-     "purpose": "Multimodal ambient vision Muse skill"
-    }
-   ]
-  },
-  "rabbit_alternatives": {
-   "title": "Open-source Rabbit R1 alternatives & related",
-   "items": [
-    {
-     "name": "S1-app (Rabbit R1 alternative)",
-     "repo": "Foqsee/S1-app",
-     "purpose": "Open-source alternative to Rabbit R1"
-    },
-    {
-     "name": "hamster-h1 (Rabbit R1 alternative)",
-     "repo": "harigovind511/hamster-h1",
-     "purpose": "OS alternative aiming at parity with Rabbit R1"
-    }
-   ]
-  }
- },
- "quickstart": {
-  "esp32": "git clone https://github.com/facebookincubator/muse-gadget-sdk.git && cd muse-gadget-sdk/esp32 && idf.py build",
-  "linux": "curl -fsSL https://raw.githubusercontent.com/facebookincubator/muse-gadget-sdk/main/linux/install.sh -o install.sh && bash install.sh --sdk-token mgst_…",
-  "muse_code": "curl -fsSL https://dev.meta.ai/install.sh | sh   # official Muse Code CLI"
- },
- "verification_sources": [
-  {
-   "name": "Official SDK repo (board list & skills catalog)",
-   "url": "https://github.com/facebookincubator/muse-gadget-sdk",
-   "expected_token": "Muse Gadgets"
-  },
-  {
-   "name": "Official Muse Gadgets homepage",
-   "url": "https://gadgets.muse.ai",
-   "expected_token": "Muse"
-  },
-  {
-   "name": "Official Skill Catalog",
-   "url": "https://raw.githubusercontent.com/facebookincubator/muse-gadget-sdk/main/skills/CATALOG.md",
-   "expected_token": "Skill Catalog"
-  }
- ]
+  ]
 }
