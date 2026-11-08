@@ -160,6 +160,7 @@ Third-party projects that adapt, wrap, or extend the SDK. Quality varies — che
 | [muse-gadget-sdk (alt fork)](https://github.com/ledienbien-ai/muse-gadget-sdk) | ledienbien-ai | fork | — |
 | [Waveshare Muse Gadget SDK](https://github.com/wupsbr/waveshare-muse-gadget-sdk) | wupsbr | board-port | Waveshare ESP32-S3 boards (1.75/1.75C) |
 | [muse-r1 (Rabbit r1 home launcher)](https://github.com/cameronapak/muse-r1) | cameronapak | device-mod | Native Android HOME app: turn Rabbit r1 into a Muse Gadget host |
+| [Pal Again (muse-gadget-ios)](https://github.com/exrector/muse-gadget-ios) | exrector | port | Native iOS and iPadOS app: turn old iPhones and iPads into Muse gadgets |
 | [muse-arr](https://github.com/vocino/muse-arr) | vocino | skill-extension | Control Sonarr/Radarr from Muse |
 | [muse-gadget (Waveshare status report)](https://github.com/az9713/muse-gadget) | az9713 | board-port | Waveshare ESP32-S3-Touch-AMOLED-1.75C |
 | [muse-gadget-xiaozhi](https://github.com/moerdowo/muse-gadget-xiaozhi) | moerdowo | firmware-port | Muse UI (pixel character, push-to-talk, captioned display) for xiaozhi-esp32 |

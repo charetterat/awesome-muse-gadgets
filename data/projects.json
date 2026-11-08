@@ -481,6 +481,13 @@
           "purpose": "Native Android HOME app: turn Rabbit r1 into a Muse Gadget host"
         },
         {
+          "name": "Pal Again (muse-gadget-ios)",
+          "author": "exrector",
+          "repo": "exrector/muse-gadget-ios",
+          "kind": "port",
+          "purpose": "Native iOS and iPadOS app: turn old iPhones and iPads into Muse gadgets"
+        },
+        {
           "name": "muse-arr",
           "author": "vocino",
           "repo": "vocino/muse-arr",
